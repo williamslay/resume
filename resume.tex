@@ -2,21 +2,22 @@
 
 \documentclass{resume}
 %\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Bin Yuan}
+\name{Lei Shangyuan}
 
-\basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+\basicInfo
+{
+\href{https://github.com/williamslay}{\raisebox{-0.05\height}\faGithub\ williamslay} \ $|$ \
+%\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \
+\href{mailto:williamslay.lsy@outlook.com}{\raisebox{-0.05\height}\faEnvelope \ williamslay.lsy@outlook.com} \ $|$ \
+\href{tel:18851986021}{\raisebox{-0.05\height}\faMobile 18851986021} \\
+}
 
 \section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
 \datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
 \textit{B.S.} in Electronics Engineering (EE)
 
@@ -71,6 +72,59 @@ An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
   \item Blog: http://your.blog.me
   \item GitHub: https://github.com/username
   \item Languages: English - Fluent, Mandarin - Native speaker
+\end{itemize}
+
+\clearpage
+% the chinese resume
+\name{雷尚远}
+
+\basicInfo
+{
+\href{https://github.com/williamslay}{\raisebox{-0.05\height}\faGithub\ williamslay} \ $|$ \
+%\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \
+\href{mailto:williamslay.lsy@outlook.com}{\raisebox{-0.05\height}\faEnvelope \ williamslay.lsy@outlook.com} \ $|$ \
+\href{tel:18851986021}{\raisebox{-0.05\height}\faMobile 18851986021} \\
+}
+\section{\faGraduationCap\ 教育经历}
+\datedsubsection{\textbf{南京邮电大学}, \textit{计算机科学与技术} }{2019 -- 2023}
+在校成绩：3.56/5.0，专业排名 86/256（33.59\%）
+
+\section{\faUsers\ 工作经历}
+\datedsubsection{\textbf{外企德科-华为OD研发工程师项目} }{2024.04 -- 2025.09}
+\role{系统软件开发工程师（D2）}{数据通信产品线，网关软转发项目组}
+所在项目组为安全网关，园区网络等产业交付高性能转发(High-Performance Forwarding, HPF)组件。项目组主要负责交换机，防火墙等产品的三层数据面软件转发业务。
+\begin{itemize}
+  \item 负责日常基础转发机制问题的接口定位，问题单解决，以及承担项目组每月业务迭代需求交付。主要负责过的模块包括：基础DFX机制（包括报文流/包统计，基础示踪模块），隧道转发业务（包括SASE业务，vxlan业务等），转发管理配置模块等。
+  \item 组件小型化问题专项。负责分析与解决组件产出二进制文件体积小型化，内存占用体积优化以及CPU热点函数性能优化等小型化专项问题，优化交付件编译工程产出。
+  \item 担任组内的持续集成构建工程师（轮流）。负责保障组内日常需求开发代码持续推送集成构建主干，维护本地仓库主干，保障联调需求协调，解决组内编译工具链及平台相关问题。
+\end{itemize}
+
+\datedsubsection{\textbf{武汉拓森信息科技有限公司}}{2021.07 -- 2021.10}
+\role{Web前端开发实习生}{}
+采用传统前后端分离开发方式，负责编写华中科技大学教务管理系统模块。负责设计相关子模块页面原型，以及利用Vue组件实现前端业务页面及功能逻辑，负责设计了部分后端数据库表。
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ 个人项目经历}
+\datedsubsection{\href{https://github.com/williamslay/NJUPT_Bachelor}{\textbf{毕业设计}:定向覆盖模糊测试工具的设计与实现}}{2023.2 -- 2023.6}
+基于现有的模糊测试工具框架AFL以及AFLGo进行定向覆盖测试策略的设计与集成，并针对相应的公开通用漏洞集（CVE）复现及定向实验对比测试。主要工作量：改写AFLGo中llvm插桩计算过程，精确了程序控制流图的距离计算指标；改写AFLGo插桩过程，增加定向覆盖适应度指标。
+
+\datedsubsection{\href{https://github.com/williamslay/NJUICSPA_2023}{\textbf{兴趣项目}:南京大学2023秋季PA}}{2024.04 -- 至今}
+工作结余时间独立完成PA0-PA2部分，包括所有选做内容。选择riscV-32指令集版本，当前已正确实现NEMU模拟器，通过所有相关测试集。选做内容完成至对声卡外设的支持，可正确播放bad apple以及运行红白机模拟器中超级马里奥游戏。
+
+\datedsubsection{\href{https://github.com/williamslay/win32_clock}{\textbf{课程设计项目}:基于win32汇编设计实现的时钟程序}}{2022.05}
+为期两周，主要是利用win32汇编语言设计实现一个时钟程序。总代码量约一千行。
+
+\section{\faInfo\ 技能与获奖荣誉}
+\begin{itemize}[parsep=0.5ex]
+  \item CET6: 540
+  \item 会使用linux基本指令以及工具（readelf，objdump等），对git工具比较熟悉；在工作中会借助ChatGpt等AI工具辅助完成简单shell脚本工具，辅助完成简单的任务自动化流程；主要熟悉C以及C++开发工具链
+  \item 获奖荣誉：国家励志奖学金、江苏省十一届“三创赛”省一等奖、华为可信能力认证考试工作级
 \end{itemize}
 
 %% Reference
